@@ -59,13 +59,13 @@ if (!empty($_POST)) {
                     </div>
                     <div class="large-12 columns">
                         <label>Subject</label>
-                        <input type="text" placeholder="Subject" />
+                        <input type="text" placeholder="Subject" name="subject_email" id="subject_email"/>
                     </div>
                 </div>
                     <div class="row">
                         <div class="large-12 columns">
                             <label>Email Body</label>
-                            <textarea placeholder="Email Body" rows="25" cols="70"></textarea>
+                            <textarea placeholder="Email Body" rows="25" cols="70" name="body_email" id="body_email"></textarea>
                         </div>
                     </div>
                     <div class="row">
