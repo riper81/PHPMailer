@@ -26,7 +26,12 @@ $mail->Subject = $subject_email;
 //convert HTML into a basic plain-text alternative body
 $mail->msgHTML($body_email);
 
-
+//send the message, check for errors
+if (!$mail->send()) {
+    echo "Mailer Error: " . $mail->ErrorInfo;
+} else {
+    echo "Message sent!";
+}
 
 
 ?>
