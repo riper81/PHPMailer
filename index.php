@@ -51,11 +51,11 @@ if (!empty($_POST)) {
     <div class="large-12 columns">
         <div class="panel">
 
-            <form>
+            <form action="index.php" method="post">
                 <div class="row">
                     <div class="large-12 columns">
                         <label>Email Address</label>
-                        <input type="text" placeholder="Email address" />
+                        <input type="text" placeholder="Email address" name="to_email" id="to_email" />
                     </div>
                     <div class="large-12 columns">
                         <label>Subject</label>
@@ -68,7 +68,11 @@ if (!empty($_POST)) {
                             <textarea placeholder="Email Body" rows="25" cols="70"></textarea>
                         </div>
                     </div>
-                <a href="#" class="small round button">Send Email NOW</a><br/>
+                    <div class="row">
+                        <div class="large-8 columns">
+                            <input class="button small large-3" type="submit" value="Send Email NOW">
+                        </div>
+                    </div>
 
             </form>
 
