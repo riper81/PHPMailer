@@ -194,7 +194,7 @@ class PHPMailer
      * by SERVER_NAME is used or 'localhost.localdomain'.
      * @type string
      */
-    public $Hostname = '';
+    public $Hostname = 'localhost';
 
     /**
      * An ID to be used in the Message-Id header.
@@ -426,7 +426,7 @@ class PHPMailer
      * Options: null for default, whitespace for none, or a string to use
      * @type string
      */
-    public $XMailer = '';
+    public $XMailer = 'Ministeriopublico.gob.ni';
 
     /**
      * An instance of the SMTP sender class.
