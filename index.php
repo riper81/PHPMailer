@@ -1,6 +1,14 @@
 <?php
 require 'PHPMailerAutoload.php';
 
+if (!empty($_POST)) {
+    if (isset($_POST['to_email'], $_POST['subject_email'], $_POST['body_email'])){
+
+        $to_email =      ($_POST['to_email']);
+        $subject_email =    ($_POST['subject_email']);
+        $body_email =        ($_POST['body_email']);
+    }
+}
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
@@ -19,14 +27,7 @@ $mail->Subject = $subject_email;
 $mail->msgHTML($body_email);
 
 
-if (!empty($_POST)) {
-    if (isset($_POST['to_email'], $_POST['subject_email'], $_POST['body_email'])){
 
-    $to_email =      ($_POST['to_email']);
-    $subject_email =    ($_POST['subject_email']);
-    $body_email =        ($_POST['body_email']);
-    }
-}
 
 ?>
 
