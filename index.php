@@ -65,7 +65,7 @@ if (!empty($_POST)) {
                     <div class="row">
                         <div class="large-12 columns">
                             <label>Email Body</label>
-                            <textarea placeholder="Email Body"></textarea>
+                            <textarea placeholder="Email Body" rows="25" cols="70"></textarea>
                         </div>
                     </div>
                 <a href="#" class="small round button">Send Email NOW</a><br/>
